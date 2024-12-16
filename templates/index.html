@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stream</title>
+</head>
+<body>
+    <h1>Video Streams</h1>
+    {% for camera_id in camera_ids %}
+        <div>
+            <h2>{{ camera_id }}</h2>
+            <img src="/video/{{ camera_id }}" alt="Video Stream for {{ camera_id }}">
+        </div>
+    {% endfor %}
+</body>
+</html>

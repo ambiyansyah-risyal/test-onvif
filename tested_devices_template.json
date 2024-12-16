@@ -1,0 +1,14 @@
+[
+    {
+        "Camera": "Camera Model",
+        "URL": "camera.url.com",
+        "TCP Port": 123,
+        "Username": "username",
+        "PSW": "password",
+        "RTSP Port": 456,
+        "ONVIF USER NAME": "onvif_username",
+        "ONVIF PSW": "onvif_password",
+        "Serial No.": "serial_number",
+        "OAK KEY": "oak_key"
+    }
+]
