@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Stream</title>
+    <title>Test Video Streams</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Video Streams</h1>
-    {% for camera_id in camera_ids %}
-        <div>
-            <h2>{{ camera_id }}</h2>
-            <img src="/video/{{ camera_id }}" alt="Video Stream for {{ camera_id }}">
+    <div class="container">
+        <h1 class="my-4">Test Video Streams</h1>
+        <div class="row">
+            {% for camera_id in camera_ids %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ camera_id }}</h5>
+                            <img src="/video/{{ camera_id }}" class="card-img-top" alt="Video Stream for {{ camera_id }}">
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
-    {% endfor %}
+    </div>
 </body>
 </html>
